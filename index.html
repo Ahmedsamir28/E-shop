@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Shop</title>
+    <!-- normally -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Font Awesome library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- main template css file -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <span>
+                    E
+                </span>
+                -SHOP
+            </a>
+            <nav>
+                <i class="fa-solid fa-bars toggle-menu"></i>
+                <ul>
+                    <li><a class="active" href="# Home"> Home</a></li>
+                    <li><a href="#Products">Products</a></li>
+                    <li><a href="#Service">Service</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="form">
+                <i class="fa-regular fa-heart"> </i>
+                <i class="fa-solid fa-cart-shopping"> </i>
+                <i class="fa-regular fa-user"> </i>
+            </div>
+        </div>
+    </header>
+    <!-- Start Header -->
+
+    <!-- Start Landing -->
+    <div class="landing">
+        <div class="content">
+            <div class="text">
+                <h1>shop computers <br> & accessories</h1>
+                <p>
+                    Shop laptops desktope , monltors.
+                    tablats, pc gaming. hard drives and
+                    storage. accessories and more
+                </p>
+                <button>View more</button>
+            </div>
+            <div id="image" class="image">
+                <img class="active" src="assets/back ground/Headphone.1.png">
+                <img src="assets/back ground/Headphone.2.png">
+                <img src="assets/back ground/Headphone.3.png">
+            </div>
+        </div>
+        <div class="arrow">
+            <i onclick="nextslide()" class="fa-solid fa-chevron-left"></i>
+            <i onclick="backslide()" class="fa-solid fa-chevron-right"></i>
+        </div>
+    </div>
+
+    <!-- End Landing -->
+
+    <!-- Start Shipping -->
+    <div class="shipping">
+        <div class="container">
+            <div class="contain">
+                <i class="fa-solid fa-truck-fast"></i>
+                <div class="text">
+                    <h4>Free Shipping Us</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Eius voluptas
+                    </p>
+                </div>
+            </div>
+            <div class="contain">
+                <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                <div class="text">
+                    <h4>Money Guarantee</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Eius voluptas
+                    </p>
+                </div>
+            </div>
+            <div class="contain">
+                <i class="fa-solid fa-money-check-dollar"></i>
+                <div class="text">
+                    <h4>Payment Secured</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Eius voluptas
+                    </p>
+                </div>
+            </div>
+            <div class="contain">
+                <i class="fa-solid fa-headset"></i>
+                <div class="text">
+                    <h4>Power Support</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Eius voluptas
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Shipping -->
+
+    <!-- Start Filter Gallery -->
+    <div class="container gallery">
+        <h3>Shop By Categories</h3>
+        <div>
+            <ul class="filter">
+                <li onclick="removebtn() " class="act" data-name=".all">view all</li>
+                <li onclick="removebtn() " class="a" data-name=".phone">phones</li>
+                <li onclick="removebtn() " class="a" data-name=".headphone">headphone</li>
+                <li onclick="removebtn() " class="a" data-name=".camera">camera</li>
+                <li onclick="removebtn() " class="a" data-name=".laptop">laptops</li>
+            </ul>
+        </div>
+        <div class="content">
+
+            <div class="contain-filter all headphone">
+                <div class="text">
+                    <h5>headphone</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/Headphone1.png">
+                </div>
+                <div class="price">
+                    <div class="money">$100</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+            <div class="contain-filter all phone">
+                <div class="text">
+                    <h5>phone</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/phone1.png">
+                </div>
+                <div class="price">
+                    <div class="money">$1000</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+            <div class="contain-filter all camera">
+                <div class="text">
+                    <h5>camera</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/camera1.png">
+                </div>
+                <div class="price">
+                    <div class="money">$800</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+            <div class="contain-filter all laptop">
+                <div class="text">
+                    <h5>laptop</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/laptop1.png">
+                </div>
+                <div class="price">
+                    <div class="money">$2000</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+            <div class="contain-filter all laptop">
+                <div class="text">
+                    <h5>laptop</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/laptop2.png">
+                </div>
+                <div class="price">
+                    <div class="money">$1500</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+            <div class="contain-filter all camera">
+                <div class="text">
+                    <h5>camera</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/camera2.png">
+                </div>
+                <div class="price">
+                    <div class="money">$1060</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+            <div class="contain-filter all phone">
+                <div class="text">
+                    <h5>phone</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/phone2.png">
+                </div>
+                <div class="price">
+                    <div class="money">$1500</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+            <div class="contain-filter all headphone">
+                <div class="text">
+                    <h5>headphone</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/Headphone2.png">
+                </div>
+                <div class="price">
+                    <div class="money">$80</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+            <div class="contain-filter all camera">
+                <div class="text">
+                    <h5>camera</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/camera3.png">
+                </div>
+                <div class="price">
+                    <div class="money">$900</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+            <div class="contain-filter all phone">
+                <div class="text">
+                    <h5>phone</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/phone3.png">
+                </div>
+                <div class="price">
+                    <div class="money">$1900</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+            <div class="contain-filter all headphone">
+                <div class="text">
+                    <h5>headphone</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/Headphone3.png">
+                </div>
+                <div class="price">
+                    <div class="money">$70</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+            <div class="contain-filter all laptop">
+                <div class="text">
+                    <h5>laptop</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/laptop3.png">
+                </div>
+                <div class="price">
+                    <div class="money">$1100</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+            <div class="contain-filter all phone">
+                <div class="text">
+                    <h5>phone</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/phone4.png">
+                </div>
+                <div class="price">
+                    <div class="money">$1800</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+            <div class="contain-filter all headphone">
+                <div class="text">
+                    <h5>headphone</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/Headphone3.png">
+                </div>
+                <div class="price">
+                    <div class="money">$60</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+            <div class="contain-filter all laptop">
+                <div class="text">
+                    <h5>laptop</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/laptop4.png">
+                </div>
+                <div class="price">
+                    <div class="money">$1000</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+            <div class="contain-filter all camera">
+                <div class="text">
+                    <h5>camera</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/camera5.png">
+                </div>
+                <div class="price">
+                    <div class="money">$2100</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+            <div class="contain-filter all camera">
+                <div class="text">
+                    <h5>camera</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/camera4.png">
+                </div>
+                <div class="price">
+                    <div class="money">$800</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+            <div class="contain-filter all laptop">
+                <div class="text">
+                    <h5>laptop</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/laptop5.png">
+                </div>
+                <div class="price">
+                    <div class="money">$1100</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+            <div class="contain-filter all headphone">
+                <div class="text">
+                    <h5>headphone</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/Headphone5.png">
+                </div>
+                <div class="price">
+                    <div class="money">$40</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+            <div class="contain-filter all phone">
+                <div class="text">
+                    <h5>phone</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/phone6.png">
+                </div>
+                <div class="price">
+                    <div class="money">$1300</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+            <div class="contain-filter all phone">
+                <div class="text">
+                    <h5>phone</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/phone7.png">
+                </div>
+                <div class="price">
+                    <div class="money">$1200</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+            <div class="contain-filter all headphone">
+                <div class="text">
+                    <h5>headphone</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/Headphone6.png">
+                </div>
+                <div class="price">
+                    <div class="money">$20</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+            <div class="contain-filter all laptop">
+                <div class="text">
+                    <h5>laptop</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/laptop6.png">
+                </div>
+                <div class="price">
+                    <div class="money">$1140</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+            <div class="contain-filter all camera">
+                <div class="text">
+                    <h5>camera</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/camera7.png">
+                </div>
+                <div class="price">
+                    <div class="money">$1200</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+            <div class="contain-filter all camera">
+                <div class="text">
+                    <h5>camera</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/camera6.png">
+                </div>
+                <div class="price">
+                    <div class="money">$1100</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+            <div class="contain-filter all laptop">
+                <div class="text">
+                    <h5>laptop</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/laptop7.png">
+                </div>
+                <div class="price">
+                    <div class="money">$1100</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+            <div class="contain-filter all headphone">
+                <div class="text">
+                    <h5>headphone</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/Headphone7.png">
+                </div>
+                <div class="price">
+                    <div class="money">$30</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+            <div class="contain-filter all phone">
+                <div class="text">
+                    <h5>phone</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/phone2.png">
+                </div>
+                <div class="price">
+                    <div class="money">$1100</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+            <div class="contain-filter all phone">
+                <div class="text">
+                    <h5>phone</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/phone8.png">
+                </div>
+                <div class="price">
+                    <div class="money">$1000</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+            <div class="contain-filter all headphone">
+                <div class="text">
+                    <h5>headphone</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/Headphone8.png">
+                </div>
+                <div class="price">
+                    <div class="money">$40</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+            <div class="contain-filter all laptop">
+                <div class="text">
+                    <h5>laptop</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/laptop8.png">
+                </div>
+                <div class="price">
+                    <div class="money">$1200</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+            <div class="contain-filter all camera">
+                <div class="text">
+                    <h5>camera</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+                <div class="image">
+                    <img src="assets/camera9.png">
+                </div>
+                <div class="price">
+                    <div class="money">$1300</div>
+                    <div class="Buy">Buy</div>
+                </div>
+            </div>
+        </div>
+        <button class="load-more" id="load-more">load more</button>
+    </div>
+    <!-- End Filter Gallery -->
+
+    <!--Start best seller -->
+    <div class="container best-seller">
+        <h3>best seller products</h3>
+
+        <div class="arrows">
+            <i class="fa-solid fa-chevron-left pre-btn"></i>
+            <i class="fa-solid fa-chevron-right nxt-btn"></i>
+        </div>
+
+        <div class="product-container">
+            <div class="product-card">
+                <div class="contain-slide">
+                    <div class="text">
+                        <h5>phone</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur </p>
+                    </div>
+                    <div class="image">
+                        <img src="assets/phone1.png">
+                    </div>
+                    <div class="price">
+                        <div class="money">$100</div>
+                        <div class="Buy">Buy</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="contain-slide">
+                    <div class="text">
+                        <h5>headphone</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur </p>
+                    </div>
+                    <div class="image">
+                        <img src="assets/Headphone2.png">
+                    </div>
+                    <div class="price">
+                        <div class="money">$100</div>
+                        <div class="Buy">Buy</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="contain-slide">
+                    <div class="text">
+                        <h5>laptop</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur </p>
+                    </div>
+                    <div class="image">
+                        <img src="assets/laptop1.png">
+                    </div>
+                    <div class="price">
+                        <div class="money">$100</div>
+                        <div class="Buy">Buy</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="contain-slide">
+                    <div class="text">
+                        <h5>camera</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur </p>
+                    </div>
+                    <div class="image">
+                        <img src="assets/camera1.png">
+                    </div>
+                    <div class="price">
+                        <div class="money">$100</div>
+                        <div class="Buy">Buy</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="contain-slide">
+                    <div class="text">
+                        <h5>headphone</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur </p>
+                    </div>
+                    <div class="image">
+                        <img src="assets/Headphone3.png">
+                    </div>
+                    <div class="price">
+                        <div class="money">$100</div>
+                        <div class="Buy">Buy</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="contain-slide">
+                    <div class="text">
+                        <h5>phone</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur </p>
+                    </div>
+                    <div class="image">
+                        <img src="assets/phone2.png">
+                    </div>
+                    <div class="price">
+                        <div class="money">$100</div>
+                        <div class="Buy">Buy</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="contain-slide">
+                    <div class="text">
+                        <h5>laptop</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur </p>
+                    </div>
+                    <div class="image">
+                        <img src="assets/laptop2.png">
+                    </div>
+                    <div class="price">
+                        <div class="money">$100</div>
+                        <div class="Buy">Buy</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="contain-slide">
+                    <div class="text">
+                        <h5>camera</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur </p>
+                    </div>
+                    <div class="image">
+                        <img src="assets/camera2.png">
+                    </div>
+                    <div class="price">
+                        <div class="money">$100</div>
+                        <div class="Buy">Buy</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="contain-slide">
+                    <div class="text">
+                        <h5>headphone</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur </p>
+                    </div>
+                    <div class="image">
+                        <img src="assets/Headphone4.png">
+                    </div>
+                    <div class="price">
+                        <div class="money">$100</div>
+                        <div class="Buy">Buy</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="contain-slide">
+                    <div class="text">
+                        <h5>phone</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur </p>
+                    </div>
+                    <div class="image">
+                        <img src="assets/phone3.png">
+                    </div>
+                    <div class="price">
+                        <div class="money">$100</div>
+                        <div class="Buy">Buy</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="contain-slide">
+                    <div class="text">
+                        <h5>laptop</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur </p>
+                    </div>
+                    <div class="image">
+                        <img src="assets/laptop3.png">
+                    </div>
+                    <div class="price">
+                        <div class="money">$100</div>
+                        <div class="Buy">Buy</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="contain-slide">
+                    <div class="text">
+                        <h5>camera</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur </p>
+                    </div>
+                    <div class="image">
+                        <img src="assets/camera3.png">
+                    </div>
+                    <div class="price">
+                        <div class="money">$100</div>
+                        <div class="Buy">Buy</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End best seller -->
+
+    <!-- Start announce -->
+    <div class="announce">
+        <div class="container">
+            <div class="product">
+                <div class="text">
+                    <h2>get the best product to you</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Repudiandae magnam fuga quos distinctio asperiores dignissimos
+                    </p>
+                    <button>shop now</button>
+                </div>
+                <div class="image">
+                    <img src="assets/Earphone-.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End announce -->
+    <!-- Start conatact -->
+    <div class="footer">
+        <div class="container">
+            <div class="content">
+                <div class="logo">
+                    <h1> <span>E</span> -SHOP</h1>
+                    <span><i class="fa-brands fa-facebook"></i></span>
+                    <span><i class="fa-brands fa-twitter"></i></span>
+                    <span><i class="fa-brands fa-instagram"></i></span>
+                </div>
+                <div class="shop">
+                    <h3>shop</h3>
+                    <h5>about-us</h5>
+                    <h5>contact</h5>
+                    <h5>location</h5>
+                    <h5>FaQ</h5>
+                </div>
+                <div class="links">
+                    <h3>links</h3>
+                    <h5>headphone</h5>
+                    <h5>phone</h5>
+                    <h5>camera</h5>
+                    <h5>laptop</h5>
+                </div>
+                    <div class="contact">
+                    <h3>contact</h3>
+                    <h5>+2 324-5454-89</h5>
+                    <h5>eshop@gmail.com</h5>
+                    <h5>456-lan-london-uk</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End conatact -->
+
+
+    <script src="javascript/index.js"></script>
+</body>
+
+</html>
